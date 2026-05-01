@@ -1,0 +1,26 @@
+py -m venv .venv
+###vai criar o virtual environment desse repositório na sua máquina
+
+.venv\scripts\activate
+###vai ativar o virtual environment toda vez que voce abrir o VS Code
+
+pip install -r requirements.txt
+### vai instalar o que vai ta no requirements.txt
+
+pip freeze > requirements.txt 
+### vai redirecionar a saida dos comandos para o requirements.txt
+
+manage.py runserver
+### vai criar o servidor
+
+manage.py startapp forum
+### vai criar uma pasta forum, criou um aplicativo pra usarmos
+
+
+installed apps no setting py e botar " 'forum', " na primeira linha
+
+
+BAIXAR DJANGO: py -m pip install Django==6.0.3
+BAIXAR SQLITE VIEWER (florian)
+BAIXAR DJANGO no vs (baptiste)
+set-executionpolicy -scope currentuser unrestricted (depois apertar A)
