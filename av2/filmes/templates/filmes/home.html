@@ -5,6 +5,7 @@
 
     <head>
         <meta charset="UTF-8">
+         <title>Filmes </title>
         <link rel="stylesheet" href="{%static 'filmes/style.css' %}">
 </head>
 
@@ -27,6 +28,7 @@
                name="q"
                placeholder="Pesquisar filme"
                value="{{ query|default:'' }}">
+               
 
 
         <button type="submit">
@@ -110,7 +112,7 @@
         else{
             form.style.display = "none";
         }
-       
+        
     }
 
 
