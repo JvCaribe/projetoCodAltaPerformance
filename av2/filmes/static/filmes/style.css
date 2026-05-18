@@ -15,8 +15,7 @@ header h1 {
    
 }
 body{
-    background-color: tan;
-
+    background-color:tan;
 }
 
 
@@ -27,9 +26,6 @@ table{
     margin-top:30px;
     width:90%;
     background-color:rgb(83, 42, 23);
-    border-spacing: 0px;
-    border-radius: 15px;
-    
    
 }
 th{
