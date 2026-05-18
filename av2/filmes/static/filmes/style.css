@@ -6,7 +6,6 @@ header{
 
 
 }
-/* teste de commit */
 
 header h1 {
     text-align: center;
@@ -16,11 +15,8 @@ header h1 {
    
 }
 body{
-<<<<<<< HEAD
     background-color: tan;
-=======
-    background-color:#d2b48c;
->>>>>>> 1d66ef0e09f01a53b8bc762d1eb0bc819b150e9c
+
 }
 
 
@@ -31,13 +27,8 @@ table{
     margin-top:30px;
     width:90%;
     background-color:rgb(83, 42, 23);
-<<<<<<< HEAD
     border-spacing: 0px;
     border-radius: 15px;
-
-=======
-    box-shadow: 0 6px 12px #a58b68;
->>>>>>> 1d66ef0e09f01a53b8bc762d1eb0bc819b150e9c
     
    
 }
