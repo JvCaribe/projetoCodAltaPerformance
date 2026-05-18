@@ -16,7 +16,7 @@ header h1 {
    
 }
 body{
-    background-color:tan;
+    background-color:#d2b48c;
 }
 
 
@@ -28,6 +28,8 @@ table{
     width:90%;
     border-collapse: collapse;
     background-color:rgb(83, 42, 23);
+    box-shadow: 0 6px 12px #a58b68;
+    
    
 }
 th{
@@ -55,6 +57,10 @@ form{
     margin-bottom:20px;
 
 
+}
+.tabela-footer {
+border-radius: 80px;
+box-shadow: 0 6px 12px #a58b68;
 }
 
 
@@ -114,6 +120,6 @@ button:hover {
     background-color: rgb(141, 79, 50);
 }
 img:hover {
-    transform: scale(2);
+    transform: scale(3);
     transition: 0.3s;
 }
