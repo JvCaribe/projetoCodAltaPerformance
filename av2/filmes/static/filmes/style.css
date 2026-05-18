@@ -1,0 +1,123 @@
+header{
+    background-color:rgb(83, 42, 23);
+    padding: 19px;
+    border-radius: 15px;
+    box-shadow:0 6px 12px rgba(0,0,0,0.25)
+
+
+}
+
+header h1 {
+    text-align: center;
+    color:blanchedalmond;
+    padding: 20px;
+
+   
+}
+body{
+    background-color:tan;
+}
+
+
+
+
+table{
+    margin:auto;
+    margin-top:30px;
+    width:90%;
+    background-color:rgb(83, 42, 23);
+    border-spacing: 0;
+
+   
+}
+th{
+    background-color:rgb(83, 42, 23);
+    color:blanchedalmond;
+    padding: 15px;
+    text-align: center;
+    font-size:16px;
+
+
+}
+td{
+    background-color:blanchedalmond;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 180px;
+}
+
+
+form{
+    text-align:center;
+    margin-top:25px;
+    margin-bottom:20px;
+
+
+}
+.tabela-footer {
+border-radius: 80px;
+box-shadow: 0 6px 12px #a58b68;
+}
+
+
+input{
+    padding:10px;
+    width:250px;
+    border-radius:8px;}
+button{
+    padding:10px 15px;
+    border-radius:8px;
+    background:sienna;
+    color:beige;
+}
+
+
+img{
+    width:50px;
+    border-radius: 8px;
+}
+
+
+input {
+    background-color:blanchedalmond;
+    color:black;
+}
+
+
+a {
+    font-weight: bold;
+    color:black;
+}
+
+
+.tabela-div {
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+
+.add-filme {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.texto-add {
+    color:black;
+    font-size: 18px;
+    margin: 0;
+}
+tr:hover td {
+    background-color: #e6d2b5;
+}
+button:hover {
+    background-color: rgb(141, 79, 50);
+}
+img:hover {
+    transform: scale(3);
+    transition: 0.3s;
+}
