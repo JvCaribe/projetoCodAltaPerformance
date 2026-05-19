@@ -64,13 +64,18 @@ box-shadow: 0 6px 12px #a58b68;
 
 input{
     padding:10px;
-    width:250px;
-    border-radius:8px;}
+    margin-left: 54px;
+    width:200px;
+    border-radius:8px;
+    align-items: center;
+    justify-content: center;}
 button{
     padding:10px 15px;
     border-radius:8px;
     background:sienna;
     color:beige;
+    align-items: center;
+    justify-content: center
 }
 
 
@@ -81,7 +86,7 @@ img{
 
 
 input {
-    background-color:blanchedalmond;
+    background-color:rgb(255, 225, 181);
     color:black;
 }
 
@@ -106,12 +111,19 @@ a {
     align-self: center;
     width: 84%;
     gap: 15px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 90px;
-    background-color: rgb(255, 225, 181);
+    background-color: blanchedalmond;
     padding: 18px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
 }
+/* cores usadas
+sienna
+tan
+blanchedalmond
+rgb(83, 42, 23) cor chocolate escuro
+rgb(255, 225, 181) cor do fundo "original"
+ */
 .texto-add {
     color:black;
     font-size: 18px;
@@ -125,5 +137,6 @@ button:hover {
 }
 img:hover {
     transform: scale(3);
-    transition: 0.3s;
+    transition: 0.4s ease-in-out;
+    /* transition-behavior: ease-in-out; */
 }
