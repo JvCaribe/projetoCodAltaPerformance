@@ -2,7 +2,7 @@
 
 Integrantes:
 - Ana Anete
-- Danilo José
+- Danilo Lopes
 - João Victhor Caribé
 - João Vitor Vieira
 - João Lucas Araújo
