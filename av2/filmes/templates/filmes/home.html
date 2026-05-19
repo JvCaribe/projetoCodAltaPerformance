@@ -2,16 +2,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
-    <head>
-        <meta charset="UTF-8">
-         <title>Filmes </title>
-        <link rel="stylesheet" href="{%static 'filmes/style.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes </title>
+    <link rel="stylesheet" href="{%static 'filmes/style.css' %}">
 </head>
 
 
 <body>
-
 
 <header>
     <h1>Encontre seus filmes favoritos!</h1>
@@ -20,24 +18,18 @@
 
 <div class="barra-pesquisa">
 
-
     <form method="GET">
 
-
         <input type="text"
-               name="q"
-               placeholder="Pesquisar filme"
-               value="{{ query|default:'' }}">
-               
-
+            name="q"
+            placeholder="Pesquisar filme"
+            value="{{ query|default:'' }}">
 
         <button type="submit">
             Buscar
-    </button>
-
+        </button>
 
     </form>
-
 
 </div>
 
@@ -45,7 +37,6 @@
 
 
 <div class="tabela-div">
-
 
 <table>
     <tr>
@@ -74,6 +65,7 @@
     </tr>
     {% endfor %}
 </table>
+
 </div>
 
 
@@ -81,27 +73,22 @@
 
 <div class="add-filme">
 
-
     <p class="texto-add">
         Não encontrou o filme desejado?
     </p>
 
-
     <button type="button" onclick="abrirForm()">Adicionar Filme</button>
 
-
-<form method="POST" id="formFilme" style="display: none;">
-
+    <form method="POST" id="formFilme" style="display: none;">
 
     {% csrf_token %}
-<input type="text"
-           name="titulo"
-           placeholder="Digite o título">
-
-
+    <input type="text"
+        name="titulo"
+        placeholder="Digite o título">
     <button type="submit">Salvar</button>
 </form>
 </div>
+
 <script>
     function abrirForm(){
         let form=
@@ -114,9 +101,8 @@
         }
         
     }
-
-
 </script>
+
 <br><br>
 <footer>
         <div class= "footer" align="center">
