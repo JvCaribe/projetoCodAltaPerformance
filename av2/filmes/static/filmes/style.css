@@ -39,6 +39,10 @@ form {
     padding-bottom: 15px;
 }
 
+.input-pesquisa {
+    color: blanchedalmond;
+}
+
 table {
     margin: auto;
     margin-top: 20px;
@@ -95,6 +99,14 @@ button {
     justify-content: center
 }
 
+.button-pesquisa {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: sienna;
+    color: beige;
+    align-items: center;
+    justify-content: center;
+}
 
 img {
     width: 50px;
