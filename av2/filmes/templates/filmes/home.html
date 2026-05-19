@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes </title>
+    <link rel="stylesheet" href="{%static 'filmes/style.css' %}">
+</head>
+{% comment %} amanhã: Adicionar um icon e ajeitar o primeiro input da barra-pesquisa {% endcomment %}
+
+<body>
+
+    <header>
+        <h1>Encontre seus filmes favoritos!</h1>
+    </header>
+
+
+    <div class="barra-pesquisa">
+
+        <form class="form-pesquisa" method="GET">
+
+            <input type="text"
+                name="q"
+                placeholder="Pesquisar filme"
+                value="{{ query|default:'' }}"
+                class="input-pesquisa">
+
+            <button type="submit" class='button-pesquisa'>
+                Buscar
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="tabela-div">
+
+    <table>
+        <tr>
+            <th>Poster</th>
+            <th>Filme</th>
+            <th>Gênero</th>
+            <th>Ano</th>
+            <th>Diretor</th>
+            <th>Duração</th>
+        </tr>
+
+
+        {% for filme in filmes %}
+
+
+        <tr>
+            <td><img src="{{ filme.poster }}"></td>
+            <td><a href="https://www.imdb.com/title/{{ filme.imdb_id }}/"target="_blank">
+                {{filme.titulo}}</a>
+            </td>
+            <td>{{filme.genero}}</td>
+            <td>{{filme.ano}}</td>
+            <td>{{ filme.diretor }}</td>
+            <td>{{filme.duracao}}</td>
+    
+        </tr>
+        {% endfor %}
+    </table>
+
+    </div>
+
+
+    <div class="add-filme">
+
+        <p class="texto-add">
+            Não encontrou o filme desejado?
+        </p>
+
+        <button type="button" onclick="abrirForm()">Adicionar Filme</button>
+
+        <form method="POST" id="formFilme" style="display: none;">
+
+        {% csrf_token %}
+        <input type="text"
+            name="titulo"
+            placeholder="Digite o título">
+        <button type="submit">Salvar</button>
+    </form>
+    </div>
+
+    <script>
+        function abrirForm(){
+            let form=
+            document.getElementById("formFilme");
+            if(form.style.display == "none"){
+                form.style.display = "block";
+            }
+            else{
+                form.style.display = "none";
+            }
+            
+        }
+    </script>
+
+    <br><br>
+    <footer>
+            <div class= "footer" align="center">
+            <p> Trabalho de Códigos de Alta Performance - Web </p>
+            <p> 3° período MC - Uninassau Graças Recife - Ciências da Computação</p>
+        <table class="tabela-footer">
+            <tr>
+                <th>Alunos</th>
+                <th>Matrícula</th>
+                <th>GitHub</th>
+            </tr>
+                <td> Ana Anete Higino de Vasconcelos Pereira </td>
+                <td>01816489</td>
+                <td><a  id="git" href="https://github.com/AnaAnet3" target="_blank">Github</a></td>
+                <tr></tr>
+                <td>Danilo Lopes Cavalcanti</td>
+                <td>01793099</td>  
+                <td><a id="git" href="https://github.com/danilolopescavalcanti" target="_blank">Github</a></td>
+                <tr></tr>
+                <td>João Victhor Pereira Caribé de Carvalho</td>
+                <td>01799125</td>
+                <td><a id="git" href="https://github.com/JvCaribe" target="_blank">Github</a></td>
+                <tr></tr>
+                <td>João Vitor Vieira Souto</td>
+                <td>01795946</td>
+                <td><a id="git" href="https://github.com/joaovitorvieira729-netizen" target="_blank">Github</a></td>
+                <tr></tr>
+                <td>João Lucas Araújo de Almeida</td>
+                <td>01793571</td>
+                <td><a id="git" href="https://github.com/JLucas1127" target="_blank">Github</a></td>
+            </table>
+        </div>
+    </footer>
+
+</body>
+</html>

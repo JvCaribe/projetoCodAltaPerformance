@@ -1,0 +1,192 @@
+header {
+    background-color: rgb(83, 42, 23);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25)
+}
+
+/* teste de commit */
+
+header h1 {
+    text-align: center;
+    color: blanchedalmond;
+    padding: 15px;
+    font-size: 50px;
+
+
+}
+
+body {
+    background-color: tan;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.form-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.input-pesquisa {
+    color: blanchedalmond;
+}
+
+table {
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    border-collapse: collapse;
+    background-color: rgb(83, 42, 23);
+    /* box-shadow: 0 15px 35px  #a58b68; */
+    box-shadow: 0 12px 8px #a58b68;
+
+}
+
+th {
+    background-color: rgb(83, 42, 23);
+    color: blanchedalmond;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+
+
+}
+
+td {
+    background-color: blanchedalmond;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 180px;
+}
+
+
+.tabela-footer {
+    border-radius: 80px;
+    box-shadow: 0 20px 40px #a58b68;
+    margin-bottom: 20px;
+}
+
+
+input {
+    padding: 10px;
+    margin-left: 54px;
+    width: 200px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: sienna;
+    color: beige;
+    align-items: center;
+    justify-content: center
+}
+
+.button-pesquisa {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: sienna;
+    color: beige;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 50px;
+    border-radius: 8px;
+}
+
+
+input {
+    background-color: rgb(255, 225, 181);
+    color: black;
+}
+
+
+a {
+    font-weight: bold;
+    color: black;
+}
+
+
+.tabela-div {
+    max-height: 500px;
+    overflow-y: auto;
+    margin-top: 20px;
+    
+}
+
+
+.add-filme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 1305px;
+    gap: 15px;
+    /* margin-top: 20px; */
+    margin-left: 74px;
+    background-color: blanchedalmond;
+    padding: 18px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 12px 8px #a58b68;
+}
+
+/* 0 18px 30px -12px */
+/* 15px 0 20px -10px  */
+/* 10px 0 30px 0px */
+.texto-add {
+    color: black;
+    font-size: 18px;
+    margin: 0;
+}
+
+tr:hover td {
+    background-color: #e6d2b5;
+}
+
+button:hover {
+    background-color: rgb(141, 79, 50);
+}
+
+img:hover {
+    transform: scale(3);
+    transition: 0.4s ease-in-out;
+    /* transition-behavior: ease-in-out; */
+}
+
+p {
+    font: Times New Roman, serif;
+    font-weight: bolder;
+    color: sienna;
+    font-size: 20px;
+}
+
+footer{
+    padding-top: 50px;
+}
+
+/* cores usadas
+sienna
+tan
+blanchedalmond
+rgb(83, 42, 23) cor chocolate escuro
+rgb(255, 225, 181) cor do fundo "original"
+ */
