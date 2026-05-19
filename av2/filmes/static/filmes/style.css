@@ -130,10 +130,13 @@ a {
     max-height: 500px;
     overflow-y: auto;
     margin-top: 20px;
+    z-index: 2;
 }
 
 
 .add-filme {
+    /* position: relative; */
+    z-index: -2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,6 +171,8 @@ button:hover {
 img:hover {
     transform: scale(3);
     transition: 0.4s ease-in-out;
+    position: absolute;
+    z-index: 3;
     /* transition-behavior: ease-in-out; */
 }
 
